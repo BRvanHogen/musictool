@@ -1,0 +1,15 @@
+15 april:
+
+Project laag
+- eigenlijk wil ik dat ID automatisch gegenereerd wordt.
+--> check dit: https://www.baeldung.com/hibernate-identifiers
+
+21 april:
+Zie dit
+//let op onderstaande regel. Moest om registratie mogelijk te maken
+                .antMatchers("/users/**").permitAll()
+
+Dit was nodig om registratie mogelijk te maken. Nu kan namelijk iedereen zonder vooraf inlog
+te hebben, een account aanmaken. Probleem: wachtwoord wordt gelogd in de console. Moet nog
+encrypt worden.
+
